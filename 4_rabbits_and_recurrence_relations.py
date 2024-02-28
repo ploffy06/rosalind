@@ -12,7 +12,7 @@ for i in range(n):
         unmatured -= 1
         matured += 1
     else:
-        temp = matured * 3
+        temp = matured * k
         matured += unmatured
         unmatured = temp
 
