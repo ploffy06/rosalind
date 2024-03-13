@@ -1,2 +1,4 @@
 output.txt
+data.txt
 unsolved*.py
+__pycache__/
