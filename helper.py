@@ -17,6 +17,16 @@ def getDNAStringsList():
 
     return dna_strings
 
+def getRosalindLabels():
+    labels = []
+
+    with open('data.txt', 'r') as file:
+        for line in file:
+            if line.startswith('>'):
+                labels.append(line.replace('>', '').replace('\n', ''))
+
+    return labels
+
 def getRNACodonTable():
     bases = ['U', 'C', 'A', 'G']
     codons = [a+b+c for a in bases for b in bases for c in bases]
