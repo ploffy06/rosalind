@@ -18,7 +18,6 @@ for i in range(1, n+1):
 
     if i > m:
         matured.pop(0)
-    # print(f'month: {i}, unmatured: {unmatured}, matured: {matured}')
 
 print(unmatured + sum(matured))
 
